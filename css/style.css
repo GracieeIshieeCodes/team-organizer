@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #eef7ff;
+}
+
+.container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 100px;
+    margin-right: 15px;
+    margin-left: 10px; 
+}
+
+.title {
+    font-size: 32px;
+    color: #333;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #7AB2B2;
+}
+
+.date {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    height: 70px;
+    width: 250px;
+    background-color: #CDE8E5;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #7AB2B2;
+}
+
+.date-content {
+    font-size: 20px;
+    color: #4D869C;
+    text-align: left;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: flex-start; 
+    padding: 40px 40px 40px 40px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    height: 70px;
+    width: 300px;
+    font-size: 32px;
+    color: #4D869C;
+    border: none;
+    background-color: #CDE8E5;
+    border-radius: 10px; 
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.button:hover {
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.button-icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.notes-container {
+    margin-left: 40px;
+    margin-top: -490px;
+    margin-left: 405px;
+}
+
+.notes-title {
+    font-size: 32px;
+    color: #4D869C;
+    margin-bottom: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.notes {
+    width: 500px;
+    height: 300px;
+    padding: 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    font-family: 'Poppins', sans-serif;
+    resize: none;
+    background-color: #CDE8E5;
+}
+
+.todo-container {
+    background-color: #F6F6F6;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    margin-left: 40px;
+    margin-top: -350px;
+    margin-left: 970px;
+}
+
+.todo-title {
+    font-size: 24px;
+    color: #4D869C;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.add-todo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.todo-item input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.todo-item label {
+    font-size: 18px;
+}
+
+.todo-input {
+    flex: 1;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-family: "Poppins", sans-serif;
+}
+
+.add-todo-btn {
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color: #4D869C;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+}
+
+.add-todo-btn:hover {
+    background-color: #366775;
+}
+@keyframes popUp {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.pop-up-animation {
+    animation: popUp 0.5s ease-in-out;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+     
+    }
+    .logo{
+        margin: 0 auto;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .date {
+        position: static;
+        margin-top: 20px;
+        width: auto;
+        height: auto;
+        padding: 10px;
+        border-radius: 10px;
+        width: 80%;
+        margin: 20px auto; /* Center horizontally and add top margin */
+    }
+
+    .buttons-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .buttons {
+        width: 100%;
+    }
+
+    .button {
+        width: 100%;
+        font-size: 24px;
+        height: auto;
+    }
+
+    .notes-container {
+        margin-left: 0;
+        margin-top: 20px;
+        width: 85%;
+        margin: 20px ; /* Center horizontally and add top margin */
+    }
+
+    .notes {
+        width: 100%;
+        height: auto;
+    }
+
+    .todo-container {
+        margin-left: 0;
+        margin-top: 20px;
+        width: 80%;
+        margin: 20px auto; /* Center horizontally and add top margin */
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 24px;
+    }
+
+    .button {
+        font-size: 18px;
+    }
+
+    .notes-title {
+        font-size: 24px;
+    }
+
+    .todo-title {
+        font-size: 18px;
+    }
+
+    .notes {
+        font-size: 14px;
+    }
+
+    .todo-item label {
+        font-size: 14px;
+    }
+
+    .todo-input {
+        font-size: 14px;
+    }
+
+    .add-todo-btn {
+        font-size: 14px;
+    }
+}

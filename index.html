@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Organizer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="img/logo.png">
+</head>
+<body>
+    <div class="container pop-up-animation">
+        <div class="header">
+            <img src="img/logo.png" alt="Team Organizer Logo" class="logo">
+            <h1 class="title">TEAM ORGANIZER</h1>
+        </div>
+    </div>
+    <div class="date pop-up-animation">
+        <p id="date-content" class="date-content">TIME: <span id="time"></span><br>DATE: <span id="date"></span></p>
+    </div>
+    <div class="buttons-container pop-up-animation">
+        <div class="buttons">
+            <button id="join-meet-btn" class="button">
+                <img src="img/meet.png" alt="Join Meet Icon" class="button-icon">
+                JOIN MEET
+            </button>
+            <button id="drive-btn" class="button">
+                <img src="img/google-drive.png" alt="G-Drive Icon" class="button-icon">
+                G-DRIVE
+            </button>
+            <button id="financialButton" class="button">
+                <img src="img/report.png" alt="Financial Icon" class="button-icon">
+                FINANCIAL
+            </button>
+            <button id="playlistBtn" class="button">
+                <img src="img/youtube.png" alt="Playlist Icon" class="button-icon">
+                PLAYLIST
+            </button>
+        </div>
+    </div>
+    <div class="notes-container pop-up-animation">
+        <h2 class="notes-title">NOTES</h2>
+        <textarea id="notes-textarea" class="notes" placeholder="Type your notes here..."></textarea>
+    </div>
+    <div class="todo-container pop-up-animation">
+        <h2 class="todo-title">TO-DO</h2>
+        <div class="add-todo">
+            <input type="text" id="todo-input" class="todo-input" placeholder="Add a new todo">
+            <button id="add-todo-btn" class="add-todo-btn">Add</button>
+        </div>
+        <div class="todo" id="todo-list"></div>
+    </div>
+    <script src="js/todo.js"></script>
+    <script src="js/td.js"></script>
+    <script src="js/meet.js"></script>
+    <script src="js/play.js"></script>
+    <script src="js/notes.js"></script>
+    <script src="js/drive.js"></script>
+    <script src="js/fin.js"></script>
+</body>
+</html>
